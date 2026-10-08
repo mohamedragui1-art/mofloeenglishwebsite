@@ -37,7 +37,7 @@ button { color: inherit; }
 .site-header { position: sticky; z-index: 50; top: 0; height: 78px; background: rgba(255,255,255,.92); border-bottom: 1px solid rgba(235,232,242,.82); backdrop-filter: blur(16px); }
 .nav-shell { height: 100%; display: flex; align-items: center; justify-content: space-between; gap: 24px; }
 .brand { display: inline-flex; align-items: center; gap: 10px; flex: 0 0 auto; }
-.brand-logo { display: block; width: 184px; height: auto; object-fit: contain; }
+.brand-logo { display: block; width: auto; height: 40px; max-width: 100%; object-fit: contain; background: transparent; border: 0; box-shadow: none; mix-blend-mode: multiply; }
 .brand-mark { width: 37px; height: 37px; display: grid; place-items: center; border-radius: 12px; color: white; font-family: var(--font-display); font-size: 20px; font-weight: 800; background: var(--gradient); box-shadow: 0 7px 17px rgba(139,92,246,.22); }
 .brand-name { font-family: var(--font-display); font-size: 16px; font-weight: 800; letter-spacing: -.6px; white-space: nowrap; }
 .brand-name span { color: #777185; font-size: 13px; font-weight: 600; letter-spacing: 0; }
@@ -122,7 +122,7 @@ h1 { max-width: 640px; margin-bottom: 20px; font-size: clamp(45px, 5.4vw, 69px);
 .about-orbit { position: absolute; border: 1px solid rgba(139,92,246,.18); border-radius: 50%; }
 .orbit-a { width: 300px; height: 300px; background: radial-gradient(circle, #fff 20%, rgba(245,239,255,.7) 70%, transparent 71%); }.orbit-b { width: 220px; height: 220px; border-style: dashed; }
 .about-center { position: relative; z-index: 1; width: 225px; height: 132px; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 4px; border: 1px solid white; border-radius: 25px; background: white; box-shadow: 0 13px 40px rgba(65,49,105,.12); text-align: center; }
-.brand-logo-about { width: 186px; }.about-center strong { color: var(--purple-dark); font-family: var(--font-display); font-size: 10px; font-weight: 800; letter-spacing: .65px; line-height: 1.35; text-transform: uppercase; }
+.brand-logo-about { height: 50px; }.about-center strong { color: var(--purple-dark); font-family: var(--font-display); font-size: 10px; font-weight: 800; letter-spacing: .65px; line-height: 1.35; text-transform: uppercase; }
 .float-tag { position: absolute; z-index: 2; padding: 10px 14px; border: 1px solid rgba(235,232,242,.9); border-radius: 12px; color: #514967; background: white; box-shadow: 0 8px 22px rgba(45,33,77,.08); font-size: 10px; font-weight: 700; }.tag-teacher { top: 42px; right: 14px; }.tag-practice { bottom: 48px; right: 1px; }.tag-progress { top: 121px; left: -5px; }
 .about-copy h2 { margin-top: 0; }.about-copy > p:not(.eyebrow) { color: var(--muted); font-size: 15px; line-height: 1.85; }
 .about-emphasis { display: flex; gap: 13px; align-items: flex-start; margin: 23px 0 23px; padding: 17px; border: 1px solid #eae3fa; border-radius: 15px; color: #514668 !important; background: #fff; font-size: 13px !important; line-height: 1.65 !important; }
@@ -201,15 +201,15 @@ h1 { max-width: 640px; margin-bottom: 20px; font-size: clamp(45px, 5.4vw, 69px);
 .footer-email { display: inline-flex; align-items: center; gap: 7px; margin-top: 13px; color: #d7c7f6; font-size: 10px; font-weight: 700; text-decoration: underline; text-decoration-color: rgba(215,199,246,.35); text-underline-offset: 3px; }
 .footer-email:hover { color: #fff; text-decoration-color: #fff; }
 .footer-logo { width: fit-content; padding: 3px 9px; border-radius: 10px; background: #fff; }
-.footer-logo .brand-logo { width: 166px; }
+.footer-logo .brand-logo { height: 40px; }
 @media (max-width: 800px) {
-  .brand-logo { width: 166px; }
+  .brand-logo { height: 40px; }
 }
 @media (max-width: 560px) {
-  .brand-logo { width: 150px; }
-  .footer-logo .brand-logo { width: 152px; }
+  .brand-logo { height: 40px; }
+  .footer-logo .brand-logo { height: 40px; }
   .about-center { width: 205px; height: 120px; }
-  .brand-logo-about { width: 170px; }
+  .brand-logo-about { height: 50px; }
 }
 @media (max-width: 800px) {
   .hero-layout { display: flex; flex-direction: column; align-items: stretch; }
