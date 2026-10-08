@@ -30,10 +30,8 @@
     link.hidden = false;
     hasSocialLink = true;
   });
-  if (hasSocialLink) {
-    const note = document.querySelector("[data-social-note]");
-    if (note) note.hidden = true;
-  }
+  const socialLinks = document.querySelector(".social-links");
+  if (socialLinks && hasSocialLink) socialLinks.hidden = false;
 
   const menuButton = document.querySelector(".menu-toggle");
   const navigation = document.getElementById("primary-navigation");
